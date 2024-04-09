@@ -48,7 +48,7 @@ return {
     opts = {
       main_image = "file",
       auto_update = true,
-      neovim_image_text = "PaJlma Solo Technologies",
+      neovim_image_text = "Neovim",
       enable_line_number = true,
       file_assets = {
         jsx = { "React JS", "react" },
