@@ -57,7 +57,7 @@ return {
   },
 
   {
-    -- Discord Presence
+    -- Интеграция с Discord
     "andweeb/presence.nvim",
     event = "VeryLazy",
     opts = {
@@ -77,6 +77,7 @@ return {
   },
 
   {
+    -- UI для гита в Nvim
     "kdheepak/lazygit.nvim",
     event = "VeryLazy",
     dependencies = {
@@ -85,18 +86,19 @@ return {
   },
 
   {
-    -- МУльтикурсор
+    -- Мультикурсор
     "mg979/vim-visual-multi",
     event = "VeryLazy",
   },
 
   {
+    -- Оборот слов в скобки
     "machakann/vim-sandwich",
     event = "VeryLazy",
   },
 
   {
-    -- JSX Introdution
+    -- Улучшенная подсветка JSX
     "neoclide/vim-jsx-improve",
     event = "VeryLazy",
   },
@@ -114,7 +116,7 @@ return {
   },
 
   {
-    -- HighLighter
+    -- Подсветка цветов
     "brenoprata10/nvim-highlight-colors",
     event = "VeryLazy",
     opts = {
@@ -124,7 +126,7 @@ return {
   },
 
   {
-    -- PX To REM
+    -- px в rem
     "jsongerber/nvim-px-to-rem",
     event = "VeryLazy",
     opts = {
@@ -133,6 +135,51 @@ return {
       show_virtual_text = true,
     },
   },
+
+  {
+    -- Подробная информация о репозитории
+    "rbong/vim-flog",
+    lazy = false,
+    dependencies = {
+      "tpope/vim-fugitive",
+    },
+  },
+
+  {
+    -- Различия в файлах гит
+    "sindrets/diffview.nvim",
+    lazy = false,
+  },
+
+  {
+    -- Подсветка TODO
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = false,
+    config = function()
+      require("todo-comments").setup()
+    end,
+  },
+
+  {
+    -- Поиск ошибок и ворнингов
+    "folke/trouble.nvim",
+    lazy = false,
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+
+  {
+    -- Автокомплит кода от нейросети
+    "Exafunction/codeium.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "hrsh7th/nvim-cmp",
+    },
+    config = function()
+      require("codeium").setup {}
+    end,
+  },
+
   -- To make a plugin not be loaded
   {
     "NvChad/nvim-colorizer.lua",
