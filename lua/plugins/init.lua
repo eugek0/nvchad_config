@@ -32,6 +32,7 @@ return {
         "bash-language-server",
         "omnisharp",
         "pyright",
+        "json-lsp",
       },
     },
   },
