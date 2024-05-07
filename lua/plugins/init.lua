@@ -158,7 +158,15 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     lazy = false,
     config = function()
-      require("todo-comments").setup()
+      require("todo-comments").setup {
+        keywords = {
+          DELETE = { icon = "D", color = "warning", alt = { "DEL" } },
+          MARK = { icon = "?", color = "mark", alt = { "M" } },
+        },
+        colors = {
+          mark = { "Identifier", "#7C3" },
+        },
+      }
     end,
   },
 
@@ -181,6 +189,16 @@ return {
       require("codeium").setup {
         enable_chat = true,
       }
+    end,
+  },
+
+  {
+    "iamcco/markdown-preview.nvim",
+    lazy = false,
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function()
+      vim.fn["mkdp#util#install"]()
     end,
   },
 
