@@ -17,6 +17,8 @@ map("n", "<leader>ft", "<cmd>TodoTelescope<CR>", { desc = "Find todo" })
 map("n", "<leader>gc", "<cmd>DiffviewOpen HEAD~2<CR>", { desc = "Git last commit" })
 map("n", "<leader>gt", "<cmd>DiffviewToggleFile<CR>", { desc = "Git last commit" })
 map("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "Open Lazygit" })
+map("n", "<leader>tm", "<cmd>OrganizeImports<CR>", { desc = "Organize imports" })
+
 map("n", "<leader>tf", function()
   require("nvterm.terminal").toggle "float"
 end, { desc = "Float terminal" })
