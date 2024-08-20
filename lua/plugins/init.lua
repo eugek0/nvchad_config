@@ -221,6 +221,11 @@ return {
   },
 
   {
+    "Eandrju/cellular-automaton.nvim",
+    lazy = false,
+  },
+
+  {
     "iamcco/markdown-preview.nvim",
     lazy = false,
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
