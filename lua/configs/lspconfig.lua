@@ -4,7 +4,7 @@ local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "tsserver", "clangd", "pyright", "emmet_language_server", "bashls" }
+local servers = { "html", "cssls", "ts_ls", "clangd", "pyright", "emmet_language_server", "bashls" }
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -25,7 +25,7 @@ local function organize_imports()
   vim.lsp.buf.execute_command(params)
 end
 
-lspconfig.tsserver.setup {
+lspconfig.ts_ls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
   on_init = on_init,
