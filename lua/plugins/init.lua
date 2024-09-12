@@ -17,44 +17,44 @@ return {
 
   {
     "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "lua-language-server",
-        "stylua",
-        "html-lsp",
-        "css-lsp",
-        "prettierd",
-        "eslint_d",
-        "typescript-language-server",
-        "emmet-language-server",
-        "clangd",
-        "clang-format",
-        "bash-language-server",
-        "omnisharp",
-        "pyright",
-        "json-lsp",
-      },
-    },
+    -- opts = {
+    --   ensure_installed = {
+    --     "lua-language-server",
+    --     "stylua",
+    --     "html-lsp",
+    --     "css-lsp",
+    --     "prettierd",
+    --     "eslint_d",
+    --     "typescript-language-server",
+    --     "emmet-language-server",
+    --     "clangd",
+    --     "clang-format",
+    --     "bash-language-server",
+    --     "omnisharp",
+    --     "pyright",
+    --     "json-lsp",
+    --   },
+    -- },
   },
 
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "vim",
-        "lua",
-        "vimdoc",
-        "html",
-        "css",
-        "tsx",
-        "javascript",
-        "typescript",
-        "python",
-        "c_sharp",
-        "cpp",
-        "bash",
-      },
-    },
+    -- opts = {
+    --   ensure_installed = {
+    --     "vim",
+    --     "lua",
+    --     "vimdoc",
+    --     "html",
+    --     "css",
+    --     "tsx",
+    --     "javascript",
+    --     "typescript",
+    --     "python",
+    --     "c_sharp",
+    --     "cpp",
+    --     "bash",
+    --   },
+    -- },
   },
 
   -- {
