@@ -19,6 +19,7 @@ map("n", "<leader>gt", "<cmd>DiffviewToggleFile<CR>", { desc = "Git last commit"
 map("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "Open Lazygit" })
 map("n", "<leader>tm", "<cmd>OrganizeImports<CR>", { desc = "Organize imports" })
 map("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>", { desc = "Make it rain" })
+map("n", "<leader>lf", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics (Trouble)" })
 
 map("n", "<leader>tf", function()
   require("nvterm.terminal").toggle "float"
